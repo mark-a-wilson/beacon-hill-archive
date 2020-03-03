@@ -1,0 +1,94 @@
+img 
+  max-width: 100%
+
+img.logo 
+	height: 65px
+	margin: 10px 0 0 39px
+
+section img 
+	width: auto
+	max-height: 65vh
+	border-radius: 4px
+
+.caption 
+  color: #999
+  font-family: 'Vollkorn', serif
+  font-size: 0.94rem
+  margin-bottom: 30px
+
+
+// Simple Lightbox / with thanks to Greg Bowler on Code Pen: https://codepen.io/g105b/pen/xuclB
+.thumbnail 
+  padding: 0
+  display: inline-block
+  margin: 1px 3px
+    
+  &:hover 
+    opacity: 0.7
+
+  img 
+    display: block
+    height: auto
+      
+
+.lightbox 
+  list-style-type: none
+  display: none
+    
+  &:target 
+    display: block
+
+  a 
+    position: fixed
+    display: block
+    background: #000
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    overflow: hidden
+    z-index: 8
+
+    &::after 
+      content: "\2715"
+      position: fixed
+      z-index: 10
+      top: 0
+      right: 0
+      text-align: right
+      font-size: 2.5em
+      font-weight: lighter
+      padding: 0.5em 1.5em
+      color: #fff
+    
+    img 
+      display: block
+      z-index: 8
+      width: auto
+      max-height: 100vh
+      height: 100vh
+      margin: auto
+      border-radius: 0
+
+    
+.lightbox-caption
+	position: fixed
+	z-index: 11
+	bottom: 0
+	right: 0
+	width: 100vw
+	height: auto
+	text-align: center
+	background: rgba(0, 0, 0, 0.7)
+	color: #fff
+	padding: 30px 25%
+
+
+@-webkit-keyframes Show 
+  from 
+    opacity: 0
+    zoom: 2
+  
+
+
+
