@@ -1,10 +1,9 @@
-/** Poor man's reset **/
-* 
+* // This was in original code for sticky sidebar; keep 
 	box-sizing: border-box
 
 html
 	scroll-behavior: smooth
-	-webkit-text-size-adjust: 100% /* Prevent font scaling in landscape while allowing user zoom */
+	-webkit-text-size-adjust: 100% // Prevent font scaling in landscape while allowing user zoom 
 
 html, body 
 	background: #fff
@@ -14,7 +13,8 @@ html, body
 body
 	font-family: 'Futura', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
 	letter-spacing: 0.2px
-
+	max-width: 1180px
+	margin: auto
 
 h1 
 	font-family: 'Bosox Full'
@@ -22,21 +22,6 @@ h1
 	text-transform: uppercase
 	line-height: 1
 	margin: 0
-
-.overline, .underline 
-	color: #ccc
-	font-size: 1.1rem
-	text-transform: uppercase
-	margin-left: 25px
-
-
-.overline 
-	margin-bottom: -3px
-
-
-.underline 
-	margin-top: -22px
-
 
 h2 
 	background: #fff
@@ -50,13 +35,32 @@ h2
 @media screen and (max-width: 739px)
 	h2
 		font-size: 1rem
-		margin-left: 0
-		text-align: center 
+		margin-left: -5px
+		text-align: center
 
+p 
+	max-width: 740px
+	font-family: 'Vollkorn', serif
+
+
+// -----------
+// Header
+// -----------
 .title 
 	padding: 25px 0 50px
 
-section p 
-	max-width: 740px
-	font-family: 'Vollkorn', serif
+.overline, .underline 
+	color: #ccc
+	font-size: 1.1rem
+	text-transform: uppercase
+	margin-left: 25px
+
+.overline 
+	margin-bottom: -3px
+
+.underline 
+	margin-top: -22px
+
+
+
 

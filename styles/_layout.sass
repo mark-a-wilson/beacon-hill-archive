@@ -1,31 +1,34 @@
-// Page layout
-main 
-	max-width: 1180px
-	padding: 0 20px
-	margin: auto
-
+// -----------------
+// Main page content
+// -----------------
 .main-page 
 	width: 75%
 	margin-left: auto
 	padding: 0 40px 
 
+@media screen and (max-width: 739px)
+	.main-page
+		max-width: 100vw
+		margin-left: 0
+		width: 100%
+		padding: 0 10px
+
+
 section 
 	padding: 0 0 3rem 30px
 
-.photo-grid 
-	display: grid
-  justify-items: stretch
-	grid-template-columns: repeat(auto-fill, minmax(140px, 230px) )
-
-.video-wrapper 
-	width: 100%
-	height: 400px
-	margin: 10px 0
+@media screen and (max-width: 739px)
+	section 
+		padding: 0 0 2rem 0
 
 
-// Sidebar navigation
+
+// ---------------------------------------------------
+// Sticky sidebar menu 
+// Hides on mobile view 
 // ScrollSpy active styles (see JS tab for activation)
-.section-nav
+// ---------------------------------------------------
+.sidebar-menu
 	position: sticky
 	top: 0
 	align-self: start
@@ -42,48 +45,19 @@ section
 		display: block
 		padding: .125rem 0
 		color: #ccc
-		transition: all 50ms ease-in-out /* 💡 This small transition makes setting of the active state smooth */
+		transition: all 50ms ease-in-out // 💡 This small transition makes setting of the active state smooth 
 
 	a:hover, a:focus 
 	color: #666
 
-// Collapse the left-stick nav to full width at small screens
+// Hide the sidebar menu on mobile
 @media screen and (max-width: 739px)
-	main 
-		width: 100%
-		padding: 0
-
-	.main-page
-		max-width: 100vw
-		margin-left: 0
-
-	section 
-		padding: 0 0 2rem 0
-
-	.lightbox
-		a 
-			img
-				height: auto
-				max-width: 100vw
-
-
-	.section-nav
+	.sidebar-menu
 		display: none
-		position: relative
-		width: 100%
-		float: none
 
-	.main-page
-		width: 100%
-		padding: 0 10px
-
-	.photo-grid 
-		display: block
-
-
+// The sidebar menu uses standard list markup
 ul, ol 
 	list-style: none
-
 
 ol 
 	padding: 0
@@ -96,10 +70,24 @@ li
 
 
 
+// -------------------------
+// Wrapper for video iframes
+// -------------------------
+.video-wrapper 
+	width: 100%
+	height: 400px
+	margin: 10px 0
+
+
+
+// -----------------------------------
+// Sticky banner at bottom of viewport
+// -----------------------------------
 .banner
 	border-top: 4px solid orange
 	position: fixed
 	bottom: 0
+	left: 0
 	width: 100%
 	z-index: 7
 	text-align: center
@@ -111,3 +99,4 @@ li
 
 	a 
 		color: #fff
+
