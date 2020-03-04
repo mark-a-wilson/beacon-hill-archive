@@ -78,8 +78,7 @@ h2 {
 /* line 53, /Users/mwilson/projects/beacon-hill-archive/styles/_base.sass */
 section p {
   max-width: 740px;
-  font-family: 'Century Expanded', serif;
-  font-size: 1.1rem;
+  font-family: 'Vollkorn', serif;
 }
 
 /* line 1, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
@@ -160,7 +159,7 @@ section img {
   text-align: right;
   font-size: 2.5em;
   font-weight: lighter;
-  padding: 0.5em 1.5em;
+  padding: 5px 25px 0 0;
   color: #fff;
 }
 
@@ -168,13 +167,14 @@ section img {
 .lightbox a img {
   display: block;
   z-index: 8;
-  max-width: 100vw;
+  width: auto;
   max-height: 100vh;
+  height: 100vh;
   margin: auto;
   border-radius: 0;
 }
 
-/* line 73, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
+/* line 74, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
 .lightbox-caption {
   position: fixed;
   z-index: 11;
@@ -219,15 +219,17 @@ section {
 .photo-grid {
   display: grid;
   display-justify-items: stretch;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 230px));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 230px));
 }
 
 /* line 21, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
 .video-wrapper {
-  margin: 20px 0;
+  width: 100%;
+  height: 400px;
+  margin: 10px 0;
 }
 
-/* line 28, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+/* line 29, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
 .section-nav {
   position: sticky;
   top: 0;
@@ -237,13 +239,13 @@ section {
   color: #666;
 }
 
-/* line 36, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+/* line 37, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
 .section-nav li.active a {
   color: #333;
   font-weight: 800;
 }
 
-/* line 40, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+/* line 41, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
 .section-nav a {
   text-decoration: none;
   display: block;
@@ -253,75 +255,76 @@ section {
 }
 
 @media screen and (max-width: 739px) {
-  /* line 52, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 53, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   main {
     width: 100%;
     padding: 0;
   }
-  /* line 56, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 57, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   .main-page {
     max-width: 100vw;
     margin-left: 0;
   }
-  /* line 60, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 61, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   section {
     padding: 0 0 2rem 0;
   }
-  /* line 63, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 64, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   section h2 {
     margin-left: 0;
     text-align: center;
   }
-  /* line 71, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 72, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   .lightbox a img {
-    width: 100vw;
-    max-height: 100vh;
     height: auto;
+    max-width: 100vw;
   }
-  /* line 76, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 77, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   .section-nav {
+    display: none;
     position: relative;
     width: 100%;
     float: none;
   }
-  /* line 81, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 83, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   .main-page {
     width: 100%;
     padding: 0 10px;
   }
-  /* line 85, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 87, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   .photo-grid {
     display: block;
   }
-  /* line 88, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 90, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   .thumbnail {
     margin: 10px 0;
   }
-  /* line 90, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+  /* line 92, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
   .thumbnail img {
     max-width: 100%;
+    border-radius: 0;
   }
 }
 
-/* line 94, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+/* line 97, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
 ul, ol {
   list-style: none;
 }
 
-/* line 98, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+/* line 101, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
 ol {
   padding: 0;
   overflow: scroll;
   white-space: nowrap;
 }
 
-/* line 103, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+/* line 106, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
 li {
   margin-left: 3rem;
   font-size: 0.9rem;
 }
 
-/* line 109, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+/* line 112, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
 .banner {
   border-top: 4px solid orange;
   position: fixed;
@@ -336,7 +339,7 @@ li {
   padding: 10px 20px 20px;
 }
 
-/* line 122, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
+/* line 125, /Users/mwilson/projects/beacon-hill-archive/styles/_layout.sass */
 .banner a {
   color: #fff;
 }
