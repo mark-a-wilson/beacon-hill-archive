@@ -183,7 +183,7 @@ section img {
 /* line 67, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
 .lightbox a {
   position: fixed;
-  display: block;
+  display: flex;
   background: #000;
   top: 0;
   bottom: 0;
@@ -214,7 +214,7 @@ section img {
   display: block;
   z-index: 9;
   width: auto;
-  height: 100vh;
+  height: auto;
   max-height: 100vh;
   margin: auto;
   border-radius: 0;
