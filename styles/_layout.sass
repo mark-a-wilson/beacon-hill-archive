@@ -1,11 +1,13 @@
 // Page layout
 main 
-	padding: 0
-	margin: 0
-	display: grid
-	grid-template-columns: 1fr 4fr
+	min-width: 700px
+	max-width: 1180px
+	padding: 0 20px
+	margin: auto
 
 .main-page 
+	width: 75%
+	margin-left: auto
 	padding: 0 40px 
 
 section 
@@ -18,3 +20,104 @@ section
 
 .video-wrapper 
 	margin: 20px 0
+
+
+
+// Sidebar navigation
+// ScrollSpy active styles (see JS tab for activation)
+.section-nav
+	position: sticky
+	top: 0
+	align-self: start
+	width: 140px
+	float: left
+
+	li.active 
+		a 
+			color: #333
+			font-weight: 800
+
+	a 
+		text-decoration: none
+		display: block
+		padding: .125rem 0
+		color: #ccc
+		transition: all 50ms ease-in-out /* 💡 This small transition makes setting of the active state smooth */
+
+	a:hover, a:focus 
+	color: #666
+
+// Collapse the left-stick nav to full width at small screens
+@media screen and (max-width: 739px)
+	main 
+		width: 100%
+		padding: 0
+
+	.main-page
+		max-width: 100vw
+		margin-left: 0
+
+	section 
+		padding: 0 0 2rem 0
+
+		h2
+			margin-left: 0
+			text-align: center
+
+		img
+
+	.lightbox
+		a 
+			img
+				width: 100vw
+				max-height: 100vh
+				height: auto
+
+	.section-nav
+		position: relative
+		width: 100%
+		float: none
+
+	.main-page
+		width: 100%
+		padding: 0 10px
+
+	.photo-grid 
+		display: block
+
+	.thumbnail
+		margin: 10px 0
+		img
+			max-width: 100%
+
+
+ul, ol 
+	list-style: none
+
+
+ol 
+	padding: 0
+	overflow: scroll
+	white-space: nowrap
+
+li 
+	margin-left: 3rem
+	font-size: 0.9rem
+
+
+
+.banner
+	border-top: 4px solid orange
+	position: fixed
+	bottom: 0
+	width: 100%
+	z-index: 7
+	text-align: center
+	background: #333
+	color: #fff
+	font-size: 0.9rem
+	font-style: italic
+	padding: 10px 20px 20px
+
+	a 
+		color: #fff
