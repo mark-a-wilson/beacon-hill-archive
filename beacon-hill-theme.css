@@ -199,7 +199,7 @@ section img {
 .lightbox a::after {
   content: "\2715";
   position: fixed;
-  z-index: 10;
+  z-index: 11;
   top: 0;
   right: 0;
   left: 0;
@@ -215,23 +215,24 @@ section img {
 /* line 95, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
 .lightbox a img {
   display: block;
-  z-index: 9;
+  z-index: 12;
   width: auto;
   height: auto;
   max-height: 100vh;
   margin: auto;
   border-radius: 0;
+  touch-action: pinch-zoom;
 }
 
 @media screen and (max-width: 739px) {
-  /* line 107, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
+  /* line 108, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
   .lightbox a img {
     height: auto;
     max-width: 100vw;
   }
 }
 
-/* line 111, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
+/* line 112, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
 .lightbox-caption {
   font-family: 'Vollkorn', serif;
   position: fixed;
@@ -249,7 +250,7 @@ section img {
 }
 
 @media screen and (max-width: 739px) {
-  /* line 127, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
+  /* line 128, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
   .lightbox-caption {
     padding: 10px;
     font-size: 0.8rem;
