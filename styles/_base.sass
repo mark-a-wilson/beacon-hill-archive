@@ -23,6 +23,10 @@ h1
 	line-height: 1
 	margin: 0
 
+@media screen and (max-width: 739px)
+	h1
+		font-size: 2.8rem
+
 h2 
 	background: #fff
 	margin-left: -30px
@@ -49,17 +53,46 @@ p
 .title 
 	padding: 25px 0 50px
 
+@media screen and (max-width: 739px)
+	.title
+		display: flex
+		align-items: start
+
+@media screen and (max-width: 739px)
+	.title-wrapper
+		padding-left: 20px
+
+.title-logo 
+	display: none
+
+@media screen and (max-width: 739px)
+	.title-logo
+		display: block
+		img
+			max-width: none
+			height: 60px
+
+
 .overline, .underline 
 	color: #ccc
 	font-size: 1.1rem
 	text-transform: uppercase
 	margin-left: 25px
 
+@media screen and (max-width: 739px)
+	.overline, .underline
+		font-size: 1rem
+		margin-left: 12px
+
 .overline 
-	margin-bottom: -3px
+	margin-bottom: 0
 
 .underline 
 	margin-top: -22px
+
+@media screen and (max-width: 739px)
+	.underline
+		margin-top: -11px
 
 
 
