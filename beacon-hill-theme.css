@@ -248,6 +248,9 @@ section img {
   /* line 125, /Users/mwilson/projects/beacon-hill-archive/styles/_images.sass */
   .lightbox-caption {
     padding: 10px 20px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: left;
   }
 }
 
