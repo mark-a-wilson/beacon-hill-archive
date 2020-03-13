@@ -13,50 +13,61 @@ section img
 .caption // Use captions on standalone section images
   color: #999
   font-family: 'Vollkorn', serif
-  font-size: 0.94rem
+  font-size: 0.84rem
+  margin-top: -20px
   margin-bottom: 30px
   margin-left: 4px 
 
+.thumbnail 
+  padding: 0
+  margin: 1px 3px 1px 0
+  img 
+    display: block
+    height: auto
+  &:hover 
+    img
+      opacity: 0.5
+  
 @media screen and (max-width: 739px)
-  .caption 
-    margin-top: -5px // Align caption a bit tighter to image on mobile displays 
-
+  .thumbnail
+    margin: 0 // Reset for mobile display so that captions underneath thumbnail and regular section images have the same spacing    
+    img
+      width: 100%
+      border-radius: 0
 
 // ----------
 // Photo grid
 // ----------
-.photo-grid 
-  display: grid
-  justify-items: stretch
-  grid-template-columns: repeat(auto-fill, minmax(140px, 230px) )
+//.photo-grid 
+//  display: grid
+//  justify-items: stretch
+//  grid-template-columns: repeat(auto-fill, minmax(140px, 230px) )
 
-@media screen and (max-width: 739px)
-  .photo-grid 
-    display: block
+.photo-grid
+  display: flex
+  flex-flow: row wrap
+  align-items: stretch
+  .thumbnail
+    flex: 1 1 120px
+    margin: 3px
+    height: fit-content
 
+//@media screen and (max-width: 739px)
+//  .photo-grid 
+//    display: block
+//    .thumbnail
+//      display: block
+//      margin: 6px 0
+//      img 
+//        border-radius: 0
+//        max-height: none
+//        width: 100%
+//        height: auto
 
 // ------------------------------------------------------------------------
 // Lightbox 
 // Adapted from Greg Bowler on Code Pen: https://codepen.io/g105b/pen/xuclB
 // ------------------------------------------------------------------------
-.thumbnail 
-  padding: 0
-  display: inline-block
-  margin: 1px 3px
-    
-  &:hover 
-    opacity: 0.7
-
-  img 
-    display: block
-    height: auto
-
-@media screen and (max-width: 739px)
-  .thumbnail
-    margin: 0 // Reset for mobile display so that captions underneath thumbnail and regular section images have the same spacing    
-    img
-      max-width: 100%
-      border-radius: 0
 
 .lightbox // Each thumbnail needs a corresponding lightbox
   display: none
@@ -94,9 +105,9 @@ section img
     img 
       display: block
       z-index: 9
+      max-height: none
+      height: 100%
       width: auto
-      height: auto
-      max-height: 100vh
       margin: auto
       border-radius: 0
 
@@ -117,7 +128,7 @@ section img
   width: 100vw
   height: auto
   text-align: center
-  background: rgba(0,0,0,0.7)
+  background: rgba(0,0,0,0.85)
   color: #fff
   padding: 20px
 
