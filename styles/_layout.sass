@@ -2,9 +2,8 @@
 // Main page content
 // -----------------
 .main-page 
-	width: 75%
-	margin-left: auto
-	padding: 0 40px 
+	margin-left: 200px
+	padding: 0 40px 60px 
 
 @media screen and (max-width: 739px)
 	.main-page
@@ -29,16 +28,24 @@ section
 // ScrollSpy active styles (see JS tab for activation)
 // ---------------------------------------------------
 .sidebar-menu
+	align-self: start
+	background: #333
+	float: left
+	height: 100vh
+	overflow: auto
+	padding-bottom: 60px
 	position: sticky
 	top: 0
-	align-self: start
-	width: 140px
-	float: left
+	width: 160px
+	-ms-overflow-style: none  /* IE and Edge */
+  	scrollbar-width: none  /* Firefox */
 
-	li.active 
+
+	li.active, li:hover 
 		a 
-			color: #333
-			font-weight: 800
+			color: #fff
+			font-size: 1.2em
+			font-weight: 600
 
 	a 
 		text-decoration: none
@@ -47,8 +54,6 @@ section
 		color: #ccc
 		transition: all 50ms ease-in-out // 💡 This small transition makes setting of the active state smooth 
 
-	a:hover, a:focus 
-	color: #666
 
 // Hide the sidebar menu on mobile
 @media screen and (max-width: 739px)
