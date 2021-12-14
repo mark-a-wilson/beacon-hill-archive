@@ -45,7 +45,7 @@ h1 {
 
 h2 {
   background: #fff;
-  border-top: 4px solid #333;
+  border-top: 6px solid #555;
   margin-left: -30px;
   padding: 6px 0;
   position: sticky;
@@ -63,7 +63,7 @@ h2 {
 }
 
 p {
-  max-width: 740px;
+  max-width: 840px;
   font-family: 'Vollkorn', serif;
 }
 
@@ -131,8 +131,8 @@ img {
 }
 
 img.logo {
-  height: 65px;
-  margin: 10px 0 0 39px;
+  height: 45px;
+  margin: 10px 0 0 44px;
 }
 
 .caption {
@@ -269,6 +269,7 @@ img.logo {
 }
 
 .main-page {
+  background: #fff;
   margin-left: 200px;
   padding: 0 40px 60px;
 }
@@ -284,6 +285,10 @@ img.logo {
 
 section {
   padding: 0 0 3rem 30px;
+}
+
+section img {
+  max-height: 300px;
 }
 
 @media screen and (max-width: 739px) {
@@ -347,20 +352,19 @@ li {
 }
 
 .banner {
-  border-top: 4px solid orange;
+  border-top: 4px solid #ff7d00;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   z-index: 7;
-  text-align: center;
-  background: #333;
-  color: #fff;
-  font-size: 0.9rem;
+  background: #fffede;
+  color: #333;
+  font-size: 0.95em;
   font-style: italic;
-  padding: 10px 20px 20px;
+  padding: 6px 20px;
 }
 
 .banner a {
-  color: #fff;
+  color: blue;
 }
