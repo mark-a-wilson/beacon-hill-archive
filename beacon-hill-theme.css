@@ -99,7 +99,7 @@ p {
 }
 
 .overline, .underline {
-  color: #ccc;
+  color: #777;
   font-size: 1.1rem;
   text-transform: uppercase;
   margin-left: 25px;
@@ -131,8 +131,8 @@ img {
 }
 
 img.logo {
-  height: 45px;
-  margin: 10px 0 0 44px;
+  height: 75px;
+  height-width: auto;
 }
 
 .caption {
@@ -303,25 +303,28 @@ section img {
   float: left;
   height: 100vh;
   overflow: auto;
-  padding-bottom: 60px;
+  padding: 20px 30px 60px;
   position: sticky;
+  text-align: center;
   top: 0;
-  width: 160px;
+  width: fit-content;
   -ms-overflow-style: none;
   -ms-overflow-style-scrollbar-width: none;
 }
 
 .sidebar-menu li.active a, .sidebar-menu li:hover a {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.05em;
   font-weight: 600;
 }
 
 .sidebar-menu a {
-  text-decoration: none;
-  display: block;
-  padding: .125rem 0;
   color: #ccc;
+  display: block;
+  font-size: 0.9em;
+  padding: .125rem 0;
+  text-align: center;
+  text-decoration: none;
   transition: all 50ms ease-in-out;
 }
 
@@ -341,8 +344,7 @@ ol {
 }
 
 li {
-  margin-left: 3rem;
-  font-size: 0.9rem;
+  margin: 0;
 }
 
 .video-wrapper {

@@ -37,25 +37,27 @@ section
 	float: left
 	height: 100vh
 	overflow: auto
-	padding-bottom: 60px
+	padding: 20px 30px 60px
 	position: sticky
+	text-align: center
 	top: 0
-	width: 160px
+	width: fit-content
 	-ms-overflow-style: none  /* IE and Edge */
   	scrollbar-width: none  /* Firefox */
-
 
 	li.active, li:hover 
 		a 
 			color: #fff
-			font-size: 1.2em
+			font-size: 1.05em
 			font-weight: 600
 
 	a 
-		text-decoration: none
-		display: block
-		padding: .125rem 0
 		color: #ccc
+		display: block
+		font-size: 0.9em
+		padding: .125rem 0
+		text-align: center
+		text-decoration: none
 		transition: all 50ms ease-in-out // 💡 This small transition makes setting of the active state smooth 
 
 
@@ -72,9 +74,8 @@ ol
 	padding: 0
 	white-space: nowrap
 
-li 
-	margin-left: 3rem
-	font-size: 0.9rem
+li
+	margin: 0
 
 
 
